@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+:root{
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+   
+}
+.dark{
+    --primary-color: #212121;
+    --secondary-color: #fff;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: #008080;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #008080;
+}
+#icon{
+    width: 30px;
+    background-color: black;
+}
+
+.get-started {
+    background-color: #FFD700;
+    color: var(--primary-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.get-started:hover {
+    background-color: #FFA500;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.text {
+    max-width: 50%;
+}
+
+.text h1 {
+    font-size: 3em;
+    color: var(--secondary-color);
+    animation: fadeInDown 1s ease;
+}
+
+.text p {
+    color: #666;
+    margin: 20px 0;
+    animation: fadeInUp 1s ease;
+}
+
+.learn-more {
+    display: inline-block;
+    background-color: #008080;
+    color: var(--primary-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    animation: fadeInUp 1.5s ease;
+}
+
+.learn-more:hover {
+    background-color: #006666;
+}
+
+.image {
+    max-width: 50%;
+    animation: fadeIn 2s ease;
+}
+
+.image img {
+    height: 700px;
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">YOUR WEBSITE</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Info</a></li>
+            </ul>
+            <a href="#" class="get-started">Get Started</a>
+            <img src="moon.png" alt="moon" id="icon">
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="text">
+                <h1>Itachi Uchiha</h1>
+                <p>Itachi was the first child born to Mikoto and Fugaku Uchiha. His early childhood was marked with violence: when he was four years old, the Third Shinobi World War waged and he witnessed first-hand many of the war's casualties. The death and destruction he experienced at such a young age traumatised Itachi and made him a pacifist,[6] leading to him training non-stop to achieve his dream of becoming a ninja among ninja in order to erase fighting from the world.[7] At age 5, after becoming a big brother to Sasuke, Itachi was approached by Shisui, who offered to train together. Soon, the two became best friends, forming a brother-like bond as they continued to teach the other new tricks. During the Nine-Tailed Demon Fox's Attack, he was home alone looking after Sasuke, followed by Itachi rescuing Mikoto from falling debris,[8] and in the anime seeking shelter with Izumi.[9] The Nine-Tails' attack had soured relations between Konoha's leadership and the Uchiha, the former believing the latter to be responsible. The Uchiha were relocated to the edge of the village, isolating them from the rest of the village and making it easier to monitor them.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="image">
+                <img src="itachi-uchiha.jpg" alt="Creative Idea">
+            </div>
+        </section>
+    </main>
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function(){
+            document.body.classList.toggle("dark");
+            if(document.body.classList.contains("dark")){
+                icon.src = "sun.jpg";}
+                else{
+                    icon.src = "moon.png";
+                }
+        }
+    </script>
+</body>
+</html>
